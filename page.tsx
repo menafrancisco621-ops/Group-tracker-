@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
-import { supabase } from "../lib/supabase";
+app/page.jsx
+
 
 const INACTIVE = "Inactive";
 const STAGES = [
