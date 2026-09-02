@@ -4,6 +4,15 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+/* installed-app feel: no rubber-band bounce, respect the notch,
+   and never zoom when a leader taps an input */
+body {
+  overscroll-behavior-y: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+input, select, textarea { font-size: 16px; }
+
 /* printing the QR sheet: cards stay whole, chrome disappears */
 @media print {
   aside, nav { display: none !important; }
